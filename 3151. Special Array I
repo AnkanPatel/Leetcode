@@ -1,0 +1,10 @@
+class Solution {
+    public boolean isArraySpecial(int[] nums) {
+        for(int index=1;index<nums.length;index++){
+            if(nums[index]%2==nums[index-1]%2){
+                return false;
+            }
+        }return true;
+        
+    }
+}
